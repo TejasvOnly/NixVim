@@ -5,7 +5,6 @@
     lsp = {
       enable = true;
       servers = {
-        bashls.enable = false;
         dockerls.enable = true;
         gopls.enable = true;
         jsonls.enable = true;
