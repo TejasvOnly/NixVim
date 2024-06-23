@@ -6,11 +6,6 @@
     }
     pkgs.vimPlugins.toggleterm-nvim
   ];
-  #colorscheme = "github_dark";
-  colorschemes.nightfox = {
-    enable = true;
-    flavor = "nordfox";
-  };
   keymaps = [
     {
       mode = "t";
