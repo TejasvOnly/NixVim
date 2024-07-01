@@ -20,7 +20,8 @@
       };
 
       nvim-colorizer.enable = true;
-      fugitive.enable = true;
+      lazygit.enable = true;
+
       cmp = {
         enable = true;
         autoEnableSources = true;
@@ -314,6 +315,15 @@
           noremap = true;
           silent = true;
           desc = "Indent right";
+        };
+      }
+      {
+        mode = "n";
+        key = "<leader>g";
+        action = "<cmd>LazyGit<cr>";
+        options = {
+          noremap = true;
+          desc = "Open LazyGit screen";
         };
       }
     ];
