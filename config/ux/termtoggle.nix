@@ -33,11 +33,6 @@
       action = "<Cmd>wincmd l<CR>";
     }
     {
-      mode = "t";
-      key = "<C-w>";
-      action = "<Cmd>wincmd w<CR>";
-    }
-    {
       mode = "n";
       key = "<leader>;";
       action = "<Cmd>ToggleTerm<Cr>";

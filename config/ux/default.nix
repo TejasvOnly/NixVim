@@ -21,6 +21,10 @@
 
       nvim-colorizer.enable = true;
       lazygit.enable = true;
+      nvim-autopairs = {
+        enable = true;
+        settings.checkTs = true;
+      };
 
       cmp = {
         enable = true;
