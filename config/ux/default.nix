@@ -1,16 +1,24 @@
-{
+{pkgs, ...}: {
   imports = [
     ./treesitter.nix
     ./lsp.nix
     ./termtoggle.nix
     ./undotree.nix
   ];
+
   config = {
     globals = {
       mapleader = " ";
       maplocalleader = " ";
     };
 
+    extraPlugins = [
+      {
+        plugin = pkgs.vimPlugins.text-case-nvim;
+        config = "lua require'textcase'.setup()";
+      }
+      pkgs.vimPlugins.text-case-nvim
+    ];
     plugins = {
       luasnip = {
         enable = true;
@@ -57,6 +65,21 @@
     };
 
     keymaps = [
+      {
+        mode = "n";
+        key = "<leader>r";
+        action = "<cmd>TextCaseStartReplacingCommand<cr>";
+      }
+      {
+        mode = "n";
+        key = "ga.";
+        action = "<cmd>TextCaseOpenTelescope<cr>";
+      }
+      {
+        mode = "v";
+        key = "ga.";
+        action = "<cmd>TextCaseOpenTelescope<cr>";
+      }
       {
         mode = "";
         key = "<Space>";

@@ -176,7 +176,7 @@
     }
     {
       action = ":IncRename ";
-      key = "<F2>";
+      key = "<leader><F2>";
       mode = "n";
       options = {
         noremap = true;
@@ -185,8 +185,8 @@
       };
     }
     {
-      action = "<cmd>Lspsaga rename ++project<cr>";
-      key = "<S-F2>";
+      action = "<cmd>Lspsaga rename<cr>";
+      key = "<F2>";
       mode = "n";
       options = {
         noremap = true;

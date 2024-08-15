@@ -89,5 +89,14 @@
         silent = true;
       };
     }
+    {
+      mode = "n";
+      key = "<leader><C-x>";
+      action = "<Cmd>BufferLineCloseOthers<CR>";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
   ];
 }
