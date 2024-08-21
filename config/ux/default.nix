@@ -4,6 +4,7 @@
     ./lsp.nix
     ./termtoggle.nix
     ./undotree.nix
+    ./gitsigns.nix
   ];
 
   config = {

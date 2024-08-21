@@ -54,6 +54,10 @@
       };
       outline = {layout = "float";};
       symbolInWinbar.enable = true;
+      rename = {
+        autoSave = true;
+        inSelect = false;
+      };
     };
 
     none-ls = {
@@ -185,13 +189,22 @@
       };
     }
     {
-      action = "<cmd>Lspsaga rename<cr>";
+      action = "<cmd>Lspsaga rename ++project<cr>";
       key = "<F2>";
       mode = "n";
       options = {
         noremap = true;
         silent = true;
         desc = "Project-wide Rename";
+      };
+    }
+    {
+      action = "<cmd>Lspsaga finder<cr>";
+      key = "<F12>";
+      mode = "n";
+      options = {
+        noremap = true;
+        desc = "Find references and definitions";
       };
     }
   ];
