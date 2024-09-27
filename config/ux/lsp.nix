@@ -37,6 +37,23 @@
       inlayHints = true;
     };
     lsp-format.enable = true;
+    lsp-format.setup = {
+      json = {
+        order = ["jsonls" "null-ls"];
+      };
+      typescript = {
+        order = ["tsserver" "null-ls"];
+      };
+      typescriptreact = {
+        order = ["tsserver" "null-ls"];
+      };
+      javascript = {
+        order = ["tsserver" "null-ls"];
+      };
+      javascriptreact = {
+        order = ["tsserver" "null-ls"];
+      };
+    };
 
     lspsaga = {
       enable = true;

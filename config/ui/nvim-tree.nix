@@ -1,6 +1,7 @@
-{...}: {
+_: {
   plugins = {
     nvim-tree.enable = true;
+    nvim-tree.updateFocusedFile.enable = true;
   };
   keymaps = [
     {

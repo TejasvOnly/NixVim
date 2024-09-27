@@ -2,6 +2,7 @@
   plugins.gitsigns = {
     enable = true;
 
+    settings.current_line_blame = true;
     settings.on_attach = ''
       function(bufnr)
         local gitsigns = require('gitsigns')
