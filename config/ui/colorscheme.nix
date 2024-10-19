@@ -1,6 +1,5 @@
 {
-  colorschemes.nightfox = {
-    enable = true;
-    flavor = "nordfox";
+  colorschemes = {
+    cyberdream.enable = true;
   };
 }
