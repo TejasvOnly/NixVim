@@ -26,6 +26,7 @@
         solargraph.enable = true;
         yamlls.enable = true;
         taplo.enable = true;
+        ols.enable = true;
         clangd = {
           enable = true;
           cmd = [
